@@ -1,5 +1,13 @@
 #Decompile By 1x019 @ July 12 2022
 import os, sys, time, random, threading, urllib.request
+
+proxyResourca = [
+    'https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all',
+    'https://www.proxy-list.download/api/v1/get?type=http',
+    'https://www.proxyscan.io/download?type=socks5',
+    'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
+]
+
 try:
     import requests, cfscrape, colorama, fake_useragent
     from colorama import *
@@ -1437,12 +1445,7 @@ else:
                 except Exception:
                     sys.stdout.write(Fore.RED + '[+] The Host May Be DIE or Proxy DEAD !!!\n')
 
- proxyResourca = [
-   'https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all',
-   'https://www.proxy-list.download/api/v1/get?type=http',
-   'https://www.proxyscan.io/download?type=socks5',
-   'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
-]
+
                     
      class MainLoop:
 
