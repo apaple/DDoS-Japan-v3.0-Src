@@ -1499,9 +1499,9 @@ else:
                         in_proxies = open('socks4.txt', 'r')
                     if choice == 'sock5':
                         socks5 = open('socks5.txt', 'wb')
-                        r = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&timeout=10000&country=all)
+                        r = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=10000&country=all')
                         socks5.write(r.content)
-                        s = requests.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt)
+                        s = requests.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt')
                         socks5.write(s.content)
                         x = requests.get('https://www.proxy-list.download/api/v1/get?type=socks5&anon=elite')
                         socks5.write(x.content)
