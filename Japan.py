@@ -1521,7 +1521,6 @@ else:
                         in_line = in_line[:-1]
                     except Exception:
                         print(Fore.YELLOW + "[-] Can't connect The Url or Choice error ,Check again !!!")
-                        time.sleep(10)
 
 
     if __name__ == '__main__':
