@@ -1446,8 +1446,7 @@ else:
                     sys.stdout.write(Fore.RED + '[+] The Host May Be DIE or Proxy DEAD !!!\n')
 
 
-                    
-     class MainLoop:
+    class MainLoop:
 
         def home(self):
             global Flood_Mode
