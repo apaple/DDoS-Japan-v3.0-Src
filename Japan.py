@@ -1505,6 +1505,8 @@ else:
                         socks5.write(s.content)
                         x = requests.get('https://www.proxy-list.download/api/v1/get?type=socks5&anon=elite')
                         socks5.write(x.content)
+                        z = requests.get('https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks5.txt')
+                        socks5.write(z.content)
                         socks5.close()
                         out_socks5 = str('socks5.txt')
                         proxies_socks5 = open(out_socks5).readlines()
