@@ -1508,10 +1508,11 @@ else:
                         z = requests.get('https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks5.txt')
                         socks5.write(z.content)
                         socks5.close()
+                        os.system('python3 proxyeagle.py 500 socks5.txt socks')
                         out_socks5 = str('socks5.txt')
                         proxies_socks5 = open(out_socks5).readlines()
                         print(Fore.YELLOW + '[+] Number Of Socks5 Proxies: %s Live High Anonymous. ' % len(proxies_socks5))
-                        in_proxies = open('socks5.txt', 'r')
+                        in_proxies = open('goods.txt', 'r')
 
             except:
                 pass
