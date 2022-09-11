@@ -8,35 +8,11 @@ proxyResourca = [
     'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
 ]
 
-try:
     import requests, cfscrape, cloudscraper, colorama, fake_useragent
     from colorama import *
     from fake_useragent import UserAgent
     colorama.init(Style.BRIGHT, Back.WHITE)
-except ImportError:
-    print('[-] No module name requests !!!')
-    print('[-] No module name cfscrape !!!')
-    print('[-] No module name colorama !!!')
-    print('[-] No module name UserAgent!!!')
-    print('[+] Installing this modules ...')
-    try:
-        os.system('pip install requests')
-        os.system('pip install cfscrape')
-        os.system('pip install colorama')
-        os.system('pip install fake-useragent')
-    except:
-        if sys.platform == 'win32':
-            os.system('python -m pip install requests')
-            os.system('python -m pip install cfscrape')
-            os.system('python -m pip install colorama')
-            os.system('python -m pip install fake-useragent')
-        if sys.platform == 'linux':
-            os.system('sudo pip install requests')
-            os.system('sudo pip install cfscrape')
-            os.system('sudo pip install colorama')
-            os.system('sudo pip install fake-useragent')
 
-else:
     in_proxies = []
     request_num = 0
     referers = [
