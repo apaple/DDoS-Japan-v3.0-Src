@@ -9,7 +9,7 @@ proxyResourca = [
 ]
 
 try:
-    import requests, cfscrape, colorama, fake_useragent
+    import requests, cfscrape, cloudscraper, colorama, fake_useragent
     from colorama import *
     from fake_useragent import UserAgent
     colorama.init(Style.BRIGHT, Back.WHITE)
@@ -1375,7 +1375,9 @@ else:
                 session = requests.Session()
                 useragents = UserAgent(use_cache_server=True, cache=True)
                 session.headers = {'User-Agent':useragents.random,  'Referer':random.choice(referers) + self.url}
-                scraper = cfscrape.create_scraper(delay=None, sess=session)
+                scraper = cloudscraper.create_scraper(interpreter='nodejs',captcha={'provider': '2captcha',
+                                                                                    'api_key': 'f1558419e5b0dffcc3325d1aecc8591e' ,
+                                                                                   'no_proxy': 'false'}, delay=None, sess=session)
                 if self.choice == 'http':
                     scraper.proxies['http'] = {'http://': self.proxy}
                 if self.choice == 'https':
