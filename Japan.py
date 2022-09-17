@@ -6,11 +6,11 @@ try:
     from fake_useragent import UserAgent
     colorama.init(Style.BRIGHT, Back.WHITE)
 except ImportError:
-    print(Fore.YELLOW + '[-] No module name requests !!!')
-    print(Fore.YELLOW + '[-] No module name cfscrape !!!')
-    print(Fore.YELLOW + '[-] No module name colorama !!!')
-    print(Fore.YELLOW + '[-] No module name UserAgent!!!')
-    print(Fore.GREEN + '[+] Installing this modules ...')
+    print('[-] No module name requests !!!')
+    print('[-] No module name cfscrape !!!')
+    print('[-] No module name colorama !!!')
+    print('[-] No module name UserAgent!!!')
+    print('[+] Installing this modules ...')
     try:
         os.system('pip install requests')
         os.system('pip install cfscrape')
@@ -1415,6 +1415,8 @@ else:
                         proxy_https.write(r.content)
                         x = requests.get('https://www.proxy-list.download/api/v1/get?type=https&anon=elite')
                         proxy_https.write(x.content)
+                        z = requests.get('https://raw.githubusercontent.com/RX4096/proxy-list/main/online/https.txt')
+                        proxy_https.write(z.content)
                         proxy_https.close()
                         out_proxies = str('https.txt')
                         proxies_https = open(out_proxies).readlines()
